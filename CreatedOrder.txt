@@ -1,0 +1,5 @@
+2022-11-11
+Customer id=1, email='customer@gmail.com', age=25}
+Invoice
+Technique - [Television{diagonal=21, country='Montenegro'}, Television{diagonal=21, country='Montenegro'}, Television{diagonal=21, country='Montenegro'}, Television{diagonal=21, country='Montenegro'}]
+Type - WHOLESALE
