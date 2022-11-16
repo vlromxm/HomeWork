@@ -2,7 +2,9 @@ package ua.romanenko.module;
 
 import ua.romanenko.module.models.Customer;
 import ua.romanenko.module.models.Invoice;
+import ua.romanenko.module.services.PersonService;
 import ua.romanenko.module.services.ShopService;
+import ua.romanenko.module.services.StatisticsService;
 
 import java.io.FileWriter;
 import java.time.LocalDate;
@@ -13,24 +15,18 @@ public class Main {
 
     public static void main(String[] args) {
 
-        ShopService shopService = new ShopService();
-        Invoice receivedInvoice = shopService.getRandomInvoice();
-        System.out.println(receivedInvoice);
-
         try (FileWriter fileWriter = new FileWriter("CreatedOrder.txt");) {
-            Customer customer = new Customer(1, "customer@gmail.com", 25);
+            ShopService shopService = new ShopService();
+            Invoice receivedInvoice = shopService.getRandomInvoice();
+            Customer customer = PersonService.generateRandomCustomer();
             LocalDate localDate = LocalDate.now();
-            String time = String.valueOf(localDate);
-            String invoice = String.valueOf(receivedInvoice);
-            String user = String.valueOf(customer);
-            fileWriter.append(time);
-            fileWriter.append(user);
-            fileWriter.append(invoice);
+
+            fileWriter.append("[").append(String.valueOf(localDate)).append("]").append("\n");
+            fileWriter.append("[").append(String.valueOf(customer)).append("]").append("\n");
+            fileWriter.append("[").append(String.valueOf(receivedInvoice)).append("]");
         } catch (Exception exception) {
             exception.printStackTrace();
         }
-
-
 
     }
 }

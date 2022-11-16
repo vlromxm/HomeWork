@@ -1,27 +1,24 @@
 package ua.romanenko.module.models;
 
-public class Telephone extends Technique{
+import lombok.*;
+
+@Getter
+@Setter
+@NoArgsConstructor
+@ToString
+public class Telephone extends Technique {
 
     private String model;
+    private String diagonal;
+    private String series;
+    private String screenType;
+    private String country;
+    private int price;
 
-    public Telephone(String typeOfTechnique, String series, String screenType, int price, String model) {
-        super(typeOfTechnique, series, screenType, price);
+    public Telephone(String series, String screenType, int price, String model, String diagonal, String country) {
+        super(series, screenType, price);
         this.model = model;
-    }
-    public Telephone(){}
-
-    public String getModel() {
-        return model;
-    }
-
-    public void setModel(String model) {
-        this.model = model;
-    }
-
-    @Override
-    public String toString() {
-        return "Telephone{" +
-                "model='" + model + '\'' +
-                '}';
+        this.diagonal = diagonal;
+        this.country = country;
     }
 }
