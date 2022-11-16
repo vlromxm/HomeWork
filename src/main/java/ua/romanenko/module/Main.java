@@ -18,11 +18,10 @@ public class Main {
         try (FileWriter fileWriter = new FileWriter("CreatedOrder.txt");) {
             ShopService shopService = new ShopService();
             Invoice receivedInvoice = shopService.getRandomInvoice();
-            Customer customer = PersonService.generateRandomCustomer();
             LocalDate localDate = LocalDate.now();
 
             fileWriter.append("[").append(String.valueOf(localDate)).append("]").append("\n");
-            fileWriter.append("[").append(String.valueOf(customer)).append("]").append("\n");
+//            fileWriter.append("[").append(String.valueOf(customer)).append("]").append("\n");
             fileWriter.append("[").append(String.valueOf(receivedInvoice)).append("]");
         } catch (Exception exception) {
             exception.printStackTrace();

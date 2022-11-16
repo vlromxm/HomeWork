@@ -88,7 +88,8 @@ public class ShopService {
 
     public Invoice getRandomInvoice() {
         List<Technique> randomTechniqueList = createRandomTechniqueList();
+        Customer customer = PersonService.generateRandomCustomer();
         Type type = returnType(randomTechniqueList);
-        return new Invoice(randomTechniqueList, type);
+        return new Invoice(randomTechniqueList, type, customer);
     }
 }

@@ -1,3 +1,4 @@
-[2022-11-15]
-[id=87, email= reta@gmail.com, age=65]
-[[Television(model=none, diagonal=25, series=RTI-14, screenType=LED, country=China, price=1500), Telephone(model=Iphone, diagonal=none, series=M-1, screenType=LED, country=none, price=800), Telephone(model=Meizu, diagonal=none, series=S-10, screenType=RPI, country=none, price=50)]Type = WHOLESALE]
+[2022-11-16]
+[[Television(model=none, diagonal=45, series=RTI-244, screenType=LED, country=Poland, price=1500), Television(model=none, diagonal=45, series=RTI-244, screenType=LED, country=Poland, price=1500), Telephone(model=Iphone, diagonal=none, series=M-1, screenType=LED, country=none, price=800)]
+Customer id=42, email= asdf@gmail.com, age=27
+Type = WHOLESALE]
