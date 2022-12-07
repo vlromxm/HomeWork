@@ -33,18 +33,21 @@ public class StatisticsService {
         return new Invoice(list, type, customer);
     }
 
-//    public List<Invoice> getAllInvoices() {
-//        List<Invoice> invoices = new ArrayList<>();
-//        Invoice invoice = getInvoiceWithRandomTechniqueAndCustomer();
-//
-//
-//    }
+    public List<Invoice> getAllInvoices() {
+        List<Invoice> invoices = new ArrayList<>();
+        for(int i = 0; i<15;i++){
+            Invoice invoice = getInvoiceWithRandomTechniqueAndCustomer();
+            invoices.add(invoice);
+        }
+        return invoices;
+    }
 
 
     public static void main(String[] args) {
         StatisticsService statisticsService = new StatisticsService();
-        Invoice receivedInvoice = statisticsService.getInvoiceWithRandomTechniqueAndCustomer();
-
-        System.out.println(receivedInvoice);
+        List<Invoice> invoiceList = statisticsService.getAllInvoices();
+        System.out.println(invoiceList);
+        System.out.println();
+        
     }
 }

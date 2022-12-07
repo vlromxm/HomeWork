@@ -5,7 +5,6 @@ import lombok.*;
 @Getter
 @Setter
 @NoArgsConstructor
-@ToString
 public class Telephone extends Technique {
 
     private String model;
@@ -20,5 +19,17 @@ public class Telephone extends Technique {
         this.model = model;
         this.diagonal = diagonal;
         this.country = country;
+    }
+
+    @Override
+    public String toString() {
+        return "Telephone{" +
+                "model='" + model + '\'' +
+                ", diagonal='" + diagonal + '\'' +
+                ", series='" + series + '\'' +
+                ", screenType='" + screenType + '\'' +
+                ", country='" + country + '\'' +
+                ", price=" + price +
+                '}';
     }
 }

@@ -5,13 +5,12 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class Task1 {
+public class Task {
+    private final Scanner scanner = new Scanner(System.in);
+    private final List<String> words = new ArrayList<>();
+    private final List<String> rows = new ArrayList<>();
 
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        List<String> words = new ArrayList<>();
-        List<String> rows = new ArrayList<>();
-
+    public void writeText(){
         while (true) {
             String input = scanner.nextLine();
             if (input.equals("end")) {
@@ -29,6 +28,8 @@ public class Task1 {
                 words.add(input);
             }
         }
+    }
+    public void saveText(){
         try (FileWriter fileWriter = new FileWriter("test.csv")) {
             for (String row : rows) {
                 fileWriter.append(row + "\n");
@@ -36,5 +37,11 @@ public class Task1 {
         } catch (Exception e) {
             e.printStackTrace();
         }
+    }
+
+    public static void main(String[] args) {
+        Task task = new Task();
+        task.writeText();
+        task.saveText();
     }
 }

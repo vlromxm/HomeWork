@@ -21,11 +21,9 @@ public class Main {
             LocalDate localDate = LocalDate.now();
 
             fileWriter.append("[").append(String.valueOf(localDate)).append("]").append("\n");
-//            fileWriter.append("[").append(String.valueOf(customer)).append("]").append("\n");
-            fileWriter.append("[").append(String.valueOf(receivedInvoice)).append("]");
+            fileWriter.append(String.valueOf(receivedInvoice));
         } catch (Exception exception) {
             exception.printStackTrace();
         }
-
     }
 }

@@ -1,4 +1,5 @@
-[2022-11-16]
-[[Television(model=none, diagonal=45, series=RTI-244, screenType=LED, country=Poland, price=1500), Television(model=none, diagonal=45, series=RTI-244, screenType=LED, country=Poland, price=1500), Telephone(model=Iphone, diagonal=none, series=M-1, screenType=LED, country=none, price=800)]
-Customer id=42, email= asdf@gmail.com, age=27
-Type = WHOLESALE]
+[2022-11-29]
+
+[Telephone{model='Meizu', diagonal='none', series='S-10', screenType='RPI', country='none', price=50}, Telephone{model='Lenowo', diagonal='none', series='S-11', screenType='QLED', country='none', price=150}, Telephone{model='Xiaomi', diagonal='none', series='SSS-1', screenType='RPI', country='none', price=170}]
+[ Customer id=22, email= tytre@ukr.net, age=43 ]
+[ Type = RETAIL ]

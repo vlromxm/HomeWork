@@ -31,8 +31,8 @@ public class Invoice {
 
     @Override
     public String toString() {
-        return techniqueList + "\n" +
-                "Customer " + customer + "\n" +
-                "Type = " + type;
+        return "\n" + techniqueList + "\n" +
+                "[ Customer " + customer + " ]" + "\n" +
+                "[ Type = " + type + " ]" + "\n";
     }
 }
