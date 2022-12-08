@@ -21,7 +21,7 @@ public class JDBCRunner {
 //            deviceRepository.deleteById(1670339336699L);
 //            deviceRepository.updateDeviceAndSaveIt(1670339336699L);
             deviceRepository.getDevicesFromFactory(1670341028706L);
-//            deviceRepository.getCountAndSumDevicesForFactory();
+            deviceRepository.getCountAndSumDevicesForFactory();
         } catch (SQLException e) {
             e.printStackTrace();
         }

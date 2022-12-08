@@ -160,12 +160,11 @@ public class DeviceRepository extends JDBCRepository<Device, Long> {
              PreparedStatement statement = connection.prepareStatement(selectAllDevicesFromFactory)) {
             statement.setLong(1, id);
             try (ResultSet resultSet = statement.executeQuery()) {
-                while (resultSet.next()) {
+               while (resultSet.next()){
                     deviceList.add(deviceFromResultSet(resultSet));
                 }
-                System.out.println(deviceList);
-                return deviceList;
             }
+            return deviceList;
         }
     }
 }
