@@ -1,4 +1,4 @@
-package ua.romanenko.hw23.repository;
+package ua.romanenko.hw23.repository.JDBCrepository;
 
 import ua.romanenko.hw23.entity.Factory;
 

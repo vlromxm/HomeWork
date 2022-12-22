@@ -1,9 +1,9 @@
-package ua.romanenko.hw23.repository;
+package ua.romanenko.hw23.repository.JDBCrepository;
 
 import ua.romanenko.hw23.entity.Device;
-import ua.romanenko.hw23.entity.Factory;
 import ua.romanenko.hw23.generator.GenerateDevice;
 import ua.romanenko.hw23.generator.GenerateFactory;
+import ua.romanenko.hw23.entity.Factory;
 
 import java.sql.*;
 import java.util.ArrayList;

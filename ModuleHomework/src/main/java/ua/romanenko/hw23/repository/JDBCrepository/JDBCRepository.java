@@ -1,4 +1,4 @@
-package ua.romanenko.hw23.repository;
+package ua.romanenko.hw23.repository.JDBCrepository;
 
 import java.io.IOException;
 import java.io.InputStream;

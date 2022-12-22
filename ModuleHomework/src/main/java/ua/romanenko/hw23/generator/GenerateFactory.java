@@ -1,9 +1,7 @@
 package ua.romanenko.hw23.generator;
 
-import ua.romanenko.hw23.entity.Device;
 import ua.romanenko.hw23.entity.Factory;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
